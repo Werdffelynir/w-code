@@ -20,6 +20,7 @@ class Console extends \PHPixie\DefaultBundle\Console
     
     public function commandNames()
     {
+        // todo: Добавить имя к консоль (?), при новом классе в 'Project\App\Console'
         return array('greet');
     }
     

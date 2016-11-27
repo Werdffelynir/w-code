@@ -32,12 +32,13 @@ class HTTPProcessor extends \PHPixie\DefaultBundle\Processor\HTTP\Builder
     }
 
 
-
+    // todo: Добавить метод с спец-именем, при новом екшене в 'Project\App\HTTPProcessors'
     protected function buildMainProcessor()
     {
         $components = $this->builder->components();
 
         return new HTTPProcessors\Main(
+            $components,
             $components->template()
         );
     }
